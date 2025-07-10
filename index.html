@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio cá nhân của Nguyễn Văn Anh - Digital Marketing & Frontend Developer"
+    />
+    <meta name="author" content="Nguyễn Văn Anh" />
 
     <!--==================== UNICONS ====================-->
     <link
@@ -15,8 +20,10 @@
 
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script src="https://cdn.canvasjs.com/ga/canvasjs.min.js"></script>
+    <script src="https://cdn.canvasjs.com/ga/canvasjs.stock.min.js"></script>
 
-    <title>Responsive Portfolio Website</title>
+    <title>Nguyễn Văn Anh | Digital Marketing Portfolio</title>
   </head>
   <body>
     <!--==================== HEADER ====================-->
@@ -136,9 +143,9 @@
                   />
                   <image
                     class="home__blob-img"
-                    x="12"
-                    y="18"
-                    href="./assets/img/avataVananh.png"
+                    x="15"
+                    y="20"
+                    href="./assets/img/banner-image.png"
                   />
                 </g>
               </svg>
@@ -149,13 +156,16 @@
               <h1 class="home__title">Hi, My name's Van Anh</h1>
               <h3 class="home__subtitle">Digital Marketing</h3>
               <p class="home__description">
-                Hi, I'm Van Anh, a graduate in Information Technology from Thu
-                Duc College of Technology. With over 1 year of experience in
-                Digital Marketing, I've actively participated in various
-                projects related to construction, architecture, and the F&B
-                industry. By leveraging my solid IT knowledge, I have
-                effectively applied my skills, bringing in-depth understanding
-                and valuable expertise to my role.
+                I graduated from Thu Duc College of Technology with a degree in
+                Information Technology. With over three years of professional
+                experience in the field of Digital Marketing, I have contributed
+                to a diverse range of projects across the construction,
+                architecture, interior design, paint (including wall, wood, and
+                metal finishes), and F&B industries. Drawing upon a strong
+                foundation in IT, I have consistently applied technical and
+                analytical skills to develop strategic solutions, offering
+                meaningful insights and adding tangible value to each project I
+                undertake.
               </p>
               <!-- contact me more -->
               <a href="#contact" class="button button--flex">
@@ -173,14 +183,23 @@
           </div>
         </div>
       </section>
-
+      <!-- ================= CANVAS AUTOMATION ===========-->
+      <div id="particles-js">
+        <canvas
+          id="canvas"
+          width="1116px"
+          height="600px"
+          data-rgb="34,32,182"
+          data-bg="#fff"
+        ></canvas>
+      </div>
       <!--==================== ABOUT ====================-->
       <section class="about section" id="about">
         <h2 class="section__title">About Me</h2>
         <span class="section__subtitle">My introduction</span>
         <!-- about container -->
         <div class="about__container container grid">
-          <img src="./assets/img/aboutme.jpg" alt="" class="about__img" />
+          <img src="./assets/img/anhbi1.jpg" alt="" class="about__img" />
 
           <div class="about_data">
             <p class="about__description">
@@ -195,7 +214,7 @@
             <div class="about__info">
               <!-- Years -->
               <div>
-                <span class="about__info-title">02+</span>
+                <span class="about__info-title">03+</span>
                 <span class="about__info-name">
                   Years <br />
                   experience
@@ -222,7 +241,7 @@
             <div class="about__buttons">
               <a
                 download=""
-                href="./assets/pdf/CV_DigitalMarketing_NguyenVanAnh.pdf"
+                href="./assets/pdf/CV_VanAnh_Digital Marketing25.pdf"
                 class="button button--flex"
               >
                 Download CV <i class="uil uil-download-alt button__icon"></i>
@@ -231,7 +250,6 @@
           </div>
         </div>
       </section>
-
       <!--==================== SKILLS ====================-->
       <section class="skills section" id="skills">
         <h2 class="section__title">Skills</h2>
@@ -245,7 +263,7 @@
                 <!--skill title  -->
                 <div>
                   <h1 class="skills__title">Marketing</h1>
-                  <span class="skills__subtitle">More than 1 years</span>
+                  <span class="skills__subtitle">More than 2 years</span>
                 </div>
                 <!-- skil arrow -->
                 <i class="uil uil-angle-down skills__arrow"></i>
@@ -303,8 +321,8 @@
                 <i class="uil uil-web-grid-alt skills__icon"></i>
                 <!--skill title  -->
                 <div>
-                  <h1 class="skills__title">Website Devoloper</h1>
-                  <span class="skills__subtitle">More than 2 years</span>
+                  <h1 class="skills__title">Website Developer</h1>
+                  <span class="skills__subtitle">More than 1 years</span>
                 </div>
                 <!-- skil arrow -->
                 <i class="uil uil-angle-down skills__arrow"></i>
@@ -408,13 +426,62 @@
               </div>
             </div>
             <!-- ============ End Skill 3 ============ -->
+            <!-- ============ Skill 4 ================ -->
+            <div class="skills__content skills__close">
+              <div class="skills__header">
+                <i class="uil uil-comparison skills__icon"></i>
+                <!--skill title  -->
+                <div>
+                  <h1 class="skills__title">Business Assistant</h1>
+                  <span class="skills__subtitle">More than 1 years</span>
+                </div>
+                <!-- skil arrow -->
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+
+              <!-- list skill myseflt -->
+
+              <div class="skills__list grid">
+                <!-- skill 1 -->
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Sales Consultant</h3>
+                    <span class="skills__number">70%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__sale"></span>
+                  </div>
+                </div>
+                <!-- skill 2 -->
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Cusotmers Care</h3>
+                    <span class="skills__number">75%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__care"></span>
+                  </div>
+                </div>
+                <!-- skill 3 -->
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">B2B/B2C</h3>
+                    <span class="skills__number">65%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__b2b"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ============ End Skill 3 ============ -->
           </div>
         </div>
       </section>
 
       <!--==================== QUALIFICATION ====================-->
       <section class="qualification section">
-        <h2 class="section__title">Qualofication</h2>
+        <h2 class="section__title">Qualification</h2>
         <span class="section__subtitle">My personal journey</span>
         <div class="qualification__container container">
           <div class="qualification__tabs">
@@ -519,11 +586,11 @@
                 <div>
                   <h3 class="qualification__title">Digital Marketing</h3>
                   <span class="qualification__subtitle"
-                    >Phat Ky Food Company</span
+                    >KNK Construction Services Trading Joint Stock Company</span
                   >
                   <div class="qualification__calendar">
                     <i class="uil uil-calender"></i>
-                    August 2023 - February 2024
+                    March 2024 - June 2025
                   </div>
                 </div>
 
@@ -549,7 +616,7 @@
                   >
                   <div class="qualification__calendar">
                     <i class="uil uil-calender"></i>
-                    June 2022 - July 2023
+                    June 2022 - February 2024
                   </div>
                 </div>
               </div>
@@ -557,7 +624,7 @@
               <!--==================== QUALIFICATION 3 ====================-->
               <div class="qualification__data">
                 <div>
-                  <h3 class="qualification__title">Website Devoloper</h3>
+                  <h3 class="qualification__title">Website Developer</h3>
                   <span class="qualification__subtitle"
                     >Onicorn Media Joint Stock Company</span
                   >
@@ -632,7 +699,7 @@
               <i class="uil uil-arrow services__icon"></i>
               <h3 class="services__title">
                 Front End <br />
-                Web devoloper
+                Web developer
               </h3>
             </div>
             <span
@@ -644,7 +711,7 @@
               <div class="services__modal-content">
                 <h4 class="services__modal-title">
                   Front End <br />
-                  Web devoloper
+                  Web developer
                 </h4>
                 <i class="uil uil-times services__modal-close"></i>
 
@@ -708,6 +775,58 @@
             </div>
           </div>
           <!--==================== END SERVICES 3 ====================-->
+          <!--==================== SERVICES 4 ====================-->
+          <div class="services__content">
+            <div>
+              <i class="uil uil-comparison services__icon"></i>
+              <h3 class="services__title">
+                Sales <br />
+                Assistant
+              </h3>
+            </div>
+            <span
+              class="button button--flex button--small button--link services__button"
+            >
+              View More <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <h4 class="services__modal-title">Sales</h4>
+                <i class="uil uil-times services__modal-close"></i>
+
+                <ul class="services__modal-services grid">
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>
+                      Providing tailored consultations and quotations based on
+                      customer needs.
+                    </p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>
+                      Delivering attentive customer care and post-sales support.
+                    </p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>
+                      I collaborating with internal teams to promptly resolve
+                      customer issues.
+                    </p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>
+                      Maintaining positive client relationships to enhance
+                      satisfaction and loyalty.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--==================== END SERVICES 3 ====================-->
         </div>
       </section>
 
@@ -719,26 +838,28 @@
           <div class="swiper-wrapper">
             <!--==================== PORTFOLIO 1 ====================-->
             <div class="portfolio__content grid swiper-slide">
-              <img src="./assets/img/port1.png" alt="" class="portfolio__img" />
+              <img
+                src="./assets/img/portn1.png"
+                alt=""
+                class="portfolio__img"
+              />
 
               <!-- portfolio demo title -->
               <div class="portfolio__data">
-                <h3 class="portfolio__title">Website: phatkyfood.com</h3>
+                <h3 class="portfolio__title">Website: sontot.com.vn</h3>
                 <p class="portfolio__description">
-                  Having IT experience, I leverage it for marketing purposes to
-                  enhance the company's website. This contributes to brand
-                  recognition, the addition of new functionalities, and an
-                  increase in visits and interactions from potential customers,
-                  including orders and menu references.
+                  Strong IT background applied to digital marketing to boost
+                  traffic, brand awareness, and sales. Focused on enhancing user
+                  experience across product browsing and purchasing stages.
                   <a
-                    href="https://phatkyfood.com/"
+                    href="https://sontot.com.vn/"
                     target="_blank"
                     class="button button--flex button--small portfolio__button-web"
-                    >phatkyfood.com</a
+                    >sontot.com.vn</a
                   >
                 </p>
                 <a
-                  href="https://drive.google.com/drive/folders/1RMVOuBC2QvxsK1QqSk_OdKPTqR4bgR-r?usp=sharing"
+                  href="https://sontot.com.vn/"
                   target="_blank"
                   class="button button--flex button--small portfolio__button"
                 >
@@ -750,19 +871,28 @@
             <!--==================== END PORTFOLIO 1 ====================-->
             <!--==================== PORTFOLIO 2 ====================-->
             <div class="portfolio__content grid swiper-slide">
-              <img src="./assets/img/port3.jpg" alt="" class="portfolio__img" />
+              <img
+                src="./assets/img/portn2.png"
+                alt=""
+                class="portfolio__img"
+              />
 
               <!-- portfolio demo title -->
               <div class="portfolio__data">
-                <h3 class="portfolio__title">Images Design in Social</h3>
+                <h3 class="portfolio__title">Website: knk-jsc.com</h3>
                 <p class="portfolio__description">
-                  Self-generating ideas for photography and designing images
-                  tailored to diverse platforms such as banners, posters,
-                  landing pages, and Facebook posts. Utilizing tools like
-                  Photoshop, AI, Canva for seamless execution.
+                  Strong IT background applied to digital marketing to boost
+                  traffic, brand awareness, and sales. Focused on enhancing user
+                  experience across product browsing and purchasing stages.
+                  <a
+                    href="https://knk-jsc.com/"
+                    target="_blank"
+                    class="button button--flex button--small portfolio__button-web"
+                    >knk-jsc.com</a
+                  >
                 </p>
                 <a
-                  href="https://drive.google.com/drive/folders/1xdpHawvC8mlzWhNTYHON6sT6QtpHNgEr?usp=sharing"
+                  href="https://knk-jsc.com/"
                   target="_blank"
                   class="button button--flex button--small portfolio__button"
                 >
@@ -774,19 +904,28 @@
             <!--==================== END PORTFOLIO 2 ====================-->
             <!--==================== PORTFOLIO 3 ====================-->
             <div class="portfolio__content grid swiper-slide">
-              <img src="./assets/img/port4.jpg" alt="" class="portfolio__img" />
+              <img
+                src="./assets/img/portn3.png"
+                alt=""
+                class="portfolio__img"
+              />
 
               <!-- portfolio demo title -->
               <div class="portfolio__data">
-                <h3 class="portfolio__title">Create videos short</h3>
+                <h3 class="portfolio__title">Website: kf-trading.vn</h3>
                 <p class="portfolio__description">
-                  Staying current with trends, I personally excel in crafting
-                  innovative concepts, scripts, and video editing on platforms
-                  like CapCut, TikTok, and Facebook Reels. This approach
-                  enhances engagement levels with customers.
+                  Strong IT background applied to digital marketing to boost
+                  traffic, brand awareness, and sales. Focused on enhancing user
+                  experience across product browsing and purchasing stages.
+                  <a
+                    href="https://kf-trading.vn/"
+                    target="_blank"
+                    class="button button--flex button--small portfolio__button-web"
+                    >kf-trading.vn</a
+                  >
                 </p>
                 <a
-                  href="https://drive.google.com/drive/folders/1i52xL0pJmQ8ptnGIdAeboyo1qMLZ0U2U?usp=sharing"
+                  href="https://kf-trading.vn/"
                   target="_blank"
                   class="button button--flex button--small portfolio__button"
                 >
@@ -798,19 +937,24 @@
             <!--==================== END PORTFOLIO 3 ====================-->
             <!--==================== PORTFOLIO 4 ====================-->
             <div class="portfolio__content grid swiper-slide">
-              <img src="./assets/img/port5.png" alt="" class="portfolio__img" />
+              <img
+                src="./assets/img/portn4.png"
+                alt=""
+                class="portfolio__img"
+              />
 
               <!-- portfolio demo title -->
               <div class="portfolio__data">
-                <h3 class="portfolio__title">Image of marketing statistics</h3>
+                <h3 class="portfolio__title">Google Search Console</h3>
                 <p class="portfolio__description">
-                  Here are some marketing statistics images from Phat Ky Food.
-                  The F&B industry, known for its diverse marketing strategies
-                  and ideas, offers effective ways to connect with customers and
-                  increase revenue.
+                  Monitor customer interaction performance on the website and
+                  enhance visibility through top-performing keywords on Google.
+                  Optimize user reach and provide detailed reports on individual
+                  product performance.
                 </p>
                 <a
-                  href="https://drive.google.com/drive/folders/1l-ccob_9CVymf5CxjDSvr29jpAba4-T3?usp=sharing"
+                  download=""
+                  href="./assets/img/portn4.png"
                   target="_blank"
                   class="button button--flex button--small portfolio__button"
                 >
@@ -1014,6 +1158,9 @@
               <a href="#" class="button button--flex">
                 Send Message <i class="uil uil-message button__icon"></i>
               </a>
+              <!-- <button type="submit" class="button button--flex">
+                Send Message <i class="uil uil-message button__icon"></i>
+              </button> -->
             </div>
           </form>
         </div>
@@ -1038,7 +1185,7 @@
               <a href="#portfolio" class="footer__link">Portfolio</a>
             </li>
             <li>
-              <a href="#contact" class="footer__link">Contact Me</a>
+              <a href="#contact" class="footer__link">Contact</a>
             </li>
           </ul>
           <div class="footer__socials">

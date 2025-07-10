@@ -7,7 +7,7 @@
 
   /*========== Colors ==========*/
   /* Change favorite color */
-  --hue-color: 202.01; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+  --hue-color: 230.01; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
   /* HSL color mode */
   --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -22,6 +22,7 @@
   --container-color: #fff;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+  --border-img: hsl(var(--hue-color), 59%, 61%);
 
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
@@ -368,10 +369,27 @@ img {
   background-color: transparent;
   color: var(--first-color-alt);
 }
+/* =================== CANVAS SUN =============== */
+div#particles-js {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  top: -1;
+}
+#canvas {
+  display: block;
+  /* unicode-bidi: isolate; */
+  margin-top: 1116px auto;
+  width: 100%;
+  height: 100%;
+}
 /*==================== ABOUT ====================*/
 .about__img {
   width: 200px;
   border-radius: 0.5rem;
+  border: 5px outset var(--border-img);
   justify-self: center;
   align-items: center;
 }
@@ -489,9 +507,20 @@ img {
   width: 90%;
 }
 .skills__sketch {
-  width: 60%;
+  width: 70%;
 }
 .skills__photoshop {
+  width: 75%;
+}
+/* skill business */
+/* skill design */
+.skills__sale {
+  width: 70%;
+}
+.skills__care {
+  width: 75%;
+}
+.skills__b2b {
   width: 65%;
 }
 
